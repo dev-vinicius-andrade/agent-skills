@@ -1,0 +1,52 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-skills",
+  "owner": {
+    "name": "dev-vinicius-andrade",
+    "email": "developer.vinicius.andrade@gmail.com"
+  },
+  "metadata": {
+    "description": "Opinionated, project-agnostic guidelines that tell coding agents how to refactor code.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "refactor",
+      "description": "Refactoring guidelines for coding agents, one skill per stack. Skills: refactor:dotnet8 (behavior-preserving refactor of layered/DDD .NET 8 backends).",
+      "version": "1.0.0",
+      "source": "./",
+      "strict": false,
+      "category": "refactoring",
+      "keywords": [
+        "refactoring",
+        "dotnet",
+        "dotnet8",
+        "csharp",
+        "ddd",
+        "clean-architecture"
+      ],
+      "skills": [
+        "./skills/refactor/dotnet8"
+      ]
+    },
+    {
+      "name": "develop",
+      "description": "Development guidelines for coding agents writing new code, one skill per stack. Skills: develop:dotnet8 (compact rules for new features and fixes in layered/DDD .NET 8 backends).",
+      "version": "1.0.0",
+      "source": "./",
+      "strict": false,
+      "category": "development",
+      "keywords": [
+        "development",
+        "dotnet",
+        "dotnet8",
+        "csharp",
+        "ddd",
+        "clean-architecture"
+      ],
+      "skills": [
+        "./skills/develop/dotnet8"
+      ]
+    }
+  ]
+}
