@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "agent-skills",
+  "name": "dev-agent-skills",
   "owner": {
     "name": "dev-vinicius-andrade",
     "email": "developer.vinicius.andrade@gmail.com"
@@ -25,9 +25,7 @@
         "ddd",
         "clean-architecture"
       ],
-      "skills": [
-        "./skills/refactor/dotnet8"
-      ]
+      "skills": ["./skills/refactor/dotnet8"]
     },
     {
       "name": "develop",
@@ -44,9 +42,7 @@
         "ddd",
         "clean-architecture"
       ],
-      "skills": [
-        "./skills/develop/dotnet8"
-      ]
+      "skills": ["./skills/develop/dotnet8"]
     }
   ]
 }
